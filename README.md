@@ -6,11 +6,11 @@ API REST em **Java 21 + Spring Boot 4** para agendamento de instruções de uma 
 
 | Nome | RM |
 |------|----|
-| Fernando Gonzales | RM555045 |
-| Gabriel Vallejo | RM554973 |
-| Lucas Catroppa | RM555450 |
-| Luiz Felipe Coelho | RM555074 |
-| Vitor Musolino | RM555012 |
+| Fernando Gonzales Alexandre | RM555045 |
+| Gabriel Guerreiro Escobosa Vallejo | RM554973 |
+| Lucas Catroppa Piratininga Dias | RM555450 |
+| Luiz Felipe Coelho Ramos | RM555074 |
+| Vitor Musolino Teixeira| RM555012 |
 
 ## O que foi entregue
 
