@@ -6,27 +6,13 @@ API REST em **Java 21 + Spring Boot 4** para agendamento de instruções de uma 
 
 | Nome | RM |
 |------|----|
-| _Nome do integrante 1_ | _RM00000_ |
-| _Nome do integrante 2_ | _RM00000_ |
-| _Nome do integrante 3_ | _RM00000_ |
-| _Nome do integrante 4_ | _RM00000_ |
-| _Nome do integrante 5_ | _RM00000_ |
+| Fernando Gonzales | RM555045 |
+| Gabriel Vallejo | RM554973 |
+| Lucas Catroppa | RM555450 |
+| Luiz Felipe Coelho | RM555074 |
+| Vitor Musolino | RM555012 |
 
 ## O que foi entregue
-
-### Checkpoints anteriores (CP3 e CP4)
-- **CRUD completo de Instrutores** (`/instrutores`): cadastro, listagem paginada (10 por página, ordenada por nome, com nome, e-mail, CNH e especialidade), detalhamento, atualização (apenas nome, telefone e endereço; e-mail, CNH e especialidade **não** podem ser alterados) e exclusão lógica (inativação).
-- **CRUD completo de Alunos** (`/alunos`): cadastro, listagem paginada (nome, e-mail e CPF), detalhamento, atualização (e-mail e CPF **não** podem ser alterados) e exclusão lógica.
-- **Usuários** (`/usuarios`): cadastro com **senha criptografada (BCrypt)**, listagem, atualização de perfil e exclusão, permitidos **somente para administradores**. Qualquer usuário autenticado pode **alterar a própria senha** (`PUT /usuarios/senha`).
-- **Autenticação JWT** (`POST /login`). A migration `V10` cria o usuário inicial **admin / admin** (perfil ADMIN).
-- **Agendamento de instruções** (`POST /instrucoes`) com todas as regras de negócio:
-  - funcionamento de segunda a sábado, das 06:00 às 21:00, com instruções de 1 hora (horários inteiros);
-  - antecedência mínima de 30 minutos;
-  - aluno e instrutor precisam estar ativos;
-  - no máximo **duas** instruções por dia para o mesmo aluno;
-  - o instrutor não pode ter outra instrução na mesma data/hora;
-  - o instrutor é opcional: se não for informado, o sistema escolhe aleatoriamente um instrutor disponível (o campo `especialidade` pode ser usado como filtro).
-- **Cancelamento de instruções** (`POST /instrucoes/{id}/cancelamento`): motivo obrigatório (`ALUNO_DESISTIU`, `INSTRUTOR_CANCELOU` ou `OUTROS`) e antecedência mínima de 24 horas. Uma instrução cancelada libera o horário do instrutor e deixa de contar no limite diário do aluno.
 
 ### Checkpoint 5
 | Item pedido | Onde está |
